@@ -142,7 +142,7 @@ a {
 }
 
 .gallery {
-	background: url(img/armor.png) repeat-y 0% 0%,
+	background: url(img/armor.png) repeat-y 5% 0%,
 				url(img/armor.png) repeat-y 102.5% 0%;
 	background-size: 25%;
 	color: white;
