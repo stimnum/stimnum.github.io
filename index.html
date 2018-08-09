@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Гроза в Музее</title>
+	<link rel="shortcut icon" href="img/icon.ico">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<script type="text/javascript">
+		function changeInfo(num)
+		{
+			switch (num) {
+				case '1':
+					document.getElementById("galleryshowcase").innerHTML="<iframe width=100% height=100% src=https://www.youtube.com/embed/XEpFVL3DU-c frameborder=0 allow=autoplay; encrypted-media allowfullscreen></iframe>";
+					break;
+				case '2':
+					document.getElementById("galleryshowcase").innerHTML="<img src=img/gallery/1_level.png>";
+					break;
+				case '3':
+					document.getElementById("galleryshowcase").innerHTML="<img src=img/gallery/2_level.png>";
+					break;
+				case '4':
+					document.getElementById("galleryshowcase").innerHTML="<img src=img/gallery/3_level.png>";
+					break;
+				case '5':
+					document.getElementById("galleryshowcase").innerHTML="<img src=img/gallery/4_level.png>";
+					break;
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<div class="header">	<!-- Header -->
+		<ul>
+			<li><a href="#about">Об игре</a></li>
+			<li><a href="#gallery">Галерея</a></li>
+			<li><a href="#download">Скачать</a></li>
+			<li><a href="#footer">Контакты</a></li>
+		</ul>
+	</div>
+
+	<div class="contentblock opening" id="opening">	<!-- Opening Page -->
+		<a class="anchor" name="main"></a>	
+		<div class="textblock-center">
+			<img src="img/logo.png">
+			<a href="index.html"><img src="img/button.png"></a>
+			<a href="index.html"><p>Cat_Game_v0.321.rar</p></a>
+		</div>
+	</div>
+	
+	<div class="contentblock description1">	<!-- Description-1 -->
+		<a class="anchor" name="about"></a>	
+		<h1>ЧТО ТАКОЕ “ГРОЗА В МУЗЕЕ”?</h1>
+		<div class="textblock-center">			
+			<p>Гроза в музее — это квест-головоломка на основе платформера,  разрабатываемая командой молодых специалистов. Здесь вы сможете узнать информацию об игре и процессе её разработки.</p>
+			<p>Главному герою предстоит не только разобраться с проблемами новых друзей – персонажами картин, скульптурами и другими, - но и справиться с собственным страхом, страхом грозы, а также со злобными Крысами, которые явно что-то замышляют. Что же его ожидает в ночи музея?</p>
+		<img src="img/sequence.png" style="width:100%">
+		</div>
+	</div>
+
+	<div class="contentblock gallery">	<!--  Gallery -->
+		<a class="anchor" name="gallery"></a>	
+		<h1>ГАЛЕРЕЯ</h1>
+		<div class="galleryshowcase" id="galleryshowcase">
+			<iframe width="100%" height="100%" src="https://www.youtube.com/embed/XEpFVL3DU-c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+		<div class="gallerytable">
+			<div class="galleryblock">
+				<img src="img/gallery/vid.jpg" onclick="changeInfo('1')">
+			</div>
+			<div class="galleryblock">
+				<img src="img/gallery/1_level.png" onclick="changeInfo('2')">
+			</div>
+			<div class="galleryblock">
+				<img src="img/gallery/2_level.png" onclick="changeInfo('3')">
+			</div>
+			<div class="galleryblock">
+				<img src="img/gallery/3_level.png" onclick="changeInfo('4')">
+			</div>
+			<div class="galleryblock">
+				<img src="img/gallery/4_level.png" onclick="changeInfo('5')">
+			</div>
+		</div>
+	</div>
+
+	<div class="contentblock description2">	<!-- Description-2 -->
+		<a class="anchor" name="download"></a>	
+		<div class="content-right">
+			<p>Что прячется во тьме музеев, когда последний посетитель переступает порог, когда охранник мирно сопит на своей вахте? Это и предстоит узнать любознательному, но пугливому Котенку, когда он остался один в Эрмитаже, а неестественная гроза оживила его экспонаты.</p>
+			<img src="img/button.png"> 
+			<a href="index.html"><p style="color:gray;text-align:left">Cat_Game_v0.321.rar</p></a>
+		</div>
+	</div>
+	
+	<div class="contentblock footer">	<!-- Footer -->
+		<a class="anchor" name="footer"></a>	
+		<div class="content-left">
+			<img src="img/wat.png" style="float:left;max-width:50%">
+			<div style="float:left;margin-left:5%">
+				<p>Разработчики:</p>
+				<p>Александра Иваницкая</p>
+				<p>Илья Новиков</p>
+			</div>
+		</div>
+		<div class="content-right" style="min-height: 150pt">
+			<div style="margin-left:40%">
+				<p>Благодарности:</p>
+				<p>Ксения Жейда</p>
+				<p>Софья Махортых</p>
+				<p>Анна Горских</p>
+			</div>
+			
+		</div>
+		<div style="clear:left">		
+			<div class="content-left">
+				<p style="margin-top:30pt">2018, WAT Team</p>
+			</div>
+			<div class="content-right">
+				<div style="float:right">
+					<a href="https://vk.com/stinmum" class="link"><img src="img/VK.png"></a>
+					<a href="https://www.facebook.com/storm.in.the.museum" class="link"><img src="img/FB.png"></a>
+					<a href="index.html" class="link"><img src="img/YT.png"></a>
+					<a href="index.html" class="link"><img src="img/IG.png"></a>
+				</div>
+			</div>
+			<div style="clear:left"></div>
+		</div>
+	</div>
+</body>

@@ -1,0 +1,188 @@
+@font-face {
+	font-family: GothamProBold;
+	src: url(fonts/GothamPro-Bold.otf);
+}
+
+@font-face {
+	font-family: GothamProLight;
+	src: url(fonts/GothamPro-Light.ttf);
+}
+
+@font-face {
+	font-family: TrajanPro3Bold;
+	src: url(fonts/TrajanPro3-Bold.otf);
+}
+
+
+html {
+	background: #181335;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	
+}
+
+h1 {
+	font-family: TrajanPro3Bold;
+	font-size: 2.5em;
+	text-align: center;
+}
+
+p {
+	font-family: Trebuchet MS;
+	font-size: 1.25em;
+}
+
+a {
+	text-align: center;
+	font-family: Trebuchet MS;
+	text-decoration: none;
+	color: white;
+}
+
+.contentblock {
+	width: 70%;
+	padding: 5% 15%;
+	margin: 0;
+	float:left;
+}
+
+.textblock-center {
+	width: 70%;
+	text-align: center;
+	padding: 0 15%;
+}
+
+.textblock-right {
+	width: 50%;
+	max-height: 100%;
+	text-align: left;
+	padding: 5% 0 0 0;
+	float: right;
+}
+
+.content-left {
+	float:left;
+	width:50%;
+	margin:0;
+}
+
+.content-right {
+	margin-left:50%;
+}
+
+
+.header {
+	position: fixed;
+	height: 3.5em;
+	width: 100%;
+	background: #181335;
+	padding: 0;
+	margin: 0;
+	z-index: 999;
+}
+
+.header ul {
+	text-align: center;
+	font-size: 1.5em;
+	padding: 0;
+	padding-right: 0;
+	padding-top: 0.5em;
+	height: 100%;
+	margin: 0;
+}
+
+.header li {
+	list-style: none;
+	display: inline;
+	height: 100%;
+	padding-left: 2vw;
+	padding-right: 2vw;
+	padding-top: 0.8em;
+	padding-bottom: 0.8em;
+}
+
+.opening {
+	min-height: 600px;
+	background-image: url(img/openerBG.png);
+	background-size: cover;
+	background-position: center;
+}
+
+.opening img {
+	width: 80%;
+}
+
+.description1 {
+	background: #EAFEFF;
+}
+
+.description2 {
+	min-height: 50vw;
+	background: #EAFEFF;
+	padding-bottom: 0;
+	margin: 0;
+	background-image: url(img/klio.png);
+	background-size: 40%;
+	background-repeat: no-repeat;
+	background-position: 25% -50%;
+}
+
+.description2 img {
+	max-width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.gallery {
+	background: url(img/armor.png) repeat-y 0% 0%,
+				url(img/armor.png) repeat-y 102.5% 0%;
+	background-size: 25%;
+	color: white;
+}
+
+.galleryshowcase {
+	width: 80%;
+	height: 31.5vw;
+	padding: 5% 10%;
+}
+
+.gallerytable {
+	min-height:7em;
+}
+
+.galleryblock {
+	width: 18%;
+	padding: 1%;
+	float:left;
+}
+
+.gallery img{
+	width: 100%;
+}
+
+.footer {	
+	background: #181335;
+	background-image: url(img/cat.png);
+	background-size: 12%;
+	background-repeat: no-repeat;
+	background-position: 85% 30%;
+}
+
+.footer p {
+	font-family: Trebuchet MS;
+	font-size: 1em;	
+	margin: 0;
+	color: white;
+}
+
+.link {
+	margin-left: 5pt;
+}
