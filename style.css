@@ -31,13 +31,13 @@ body {
 
 h1 {
 	font-family: TrajanPro3Bold;
-	font-size: 2.5em;
+	font-size: 2.75em;
 	text-align: center;
 }
 
 p {
 	font-family: Trebuchet MS;
-	font-size: 1.25em;
+	font-size: 1.5em;
 }
 
 a {
@@ -128,6 +128,12 @@ a:hover {
 	background: #EAFEFF;
 }
 
+.description1 p {
+	width: 80%;
+	padding: 0 10%;
+	text-align: left;
+}
+
 .gallery {
 	background: url(img/armor.png) repeat-y 5% 0%,
 				url(img/armor.png) repeat-y 102.5% 0%;
@@ -192,7 +198,7 @@ a:hover {
 
 .footer p {
 	font-family: Trebuchet MS;
-	font-size: 1em;	
+	font-size: 1.25em;	
 	margin: 0;
 	color: white;
 }
