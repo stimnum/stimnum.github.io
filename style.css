@@ -97,10 +97,10 @@ a:hover {
 	text-align: center;
 	font-size: 1.5em;
 	padding: 0;
-	padding-right: 0;
 	padding-top: 0.5em;
 	height: 100%;
-	margin: 0;
+	min-width: 400px;
+	margin: 0 auto;
 }
 
 .header li {
@@ -111,6 +111,16 @@ a:hover {
 	padding-right: 2vw;
 	padding-top: 0.8em;
 	padding-bottom: 0.8em;
+}
+
+.header a {
+	text-decoration: none;
+}
+
+.header img {
+	padding: 0;
+	margin: 0;
+	position: absolute;
 }
 
 .opening {

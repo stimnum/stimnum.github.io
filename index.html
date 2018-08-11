@@ -27,16 +27,50 @@
 					break;
 			}
 		}
+		
+		var interval;
+		
+		function prepareUnderline(obj) {
+			clearInterval(interval);
+			interval=setInterval(function(){setUnderline(obj);},1)
+		}
+		
+		function setUnderline(obj) {
+			var x = document.getElementById("underline").offsetLeft;
+			var y = obj.offsetTop + obj.offsetHeight;
+			var width = obj.parentElement.offsetWidth;
+			
+			var fx = obj.parentElement.offsetLeft;
+			
+			if (x!=fx) {
+				if (x>fx) {x -= 2}
+				else {x += 2}
+			}
+			
+			document.getElementById("underline").style="left:" + x + "px;top:" + y + "px;width:" + width + "px;";
+			
+			if (Math.abs(x-fx)==1) {x+=1}
+			if (x == fx) {clearInterval(interval);}
+		}
+		
+		window.onload = function() {
+			var obj = document.getElementByIddocument.getElementById("link");
+			var x = obj.parentElement.offsetLeft;
+			var y = obj.offsetTop + obj.offsetHeight;
+			var width = obj.parentElement.offsetWidth;
+			document.getElementByIddocument.getElementById("underline").style="left:" + x + "px;top:" + y + "px;width:" + width + "px;";
+		};
 	</script>
 </head>
 
 <body>
 	<div class="header">	<!-- Header -->
+		<img src="img/underline.png" id="underline">
 		<ul>
-			<li><a href="#about">Об игре</a></li>
-			<li><a href="#gallery">Галерея</a></li>
-			<li><a href="#download">Скачать</a></li>
-			<li><a href="#footer">Контакты</a></li>
+			<li><a href="#about" id="link" onclick="prepareUnderline(this)">Об игре</a></li>
+			<li><a href="#gallery" onclick="prepareUnderline(this)">Галерея</a></li>
+			<li><a href="#download" onclick="prepareUnderline(this)">Скачать</a></li>
+			<li><a href="#footer" onclick="prepareUnderline(this)">Контакты</a></li>
 		</ul>
 	</div>
 
@@ -44,8 +78,8 @@
 		<a class="anchor" name="main"></a>	
 		<div class="textblock-center">
 			<img src="img/logo.png" style="max-width:70%">
-			<a href="dist/StormInTheMuseum-setup.exe"><img src="img/button.png" style="max-width:50%">
-			<p>Alpha v0.7</p></a>
+			<a href="dist/StormInTheMuseum-setup.exe"><img src="img/button.png" style="max-width:50%"></a>
+			<a href="dist/StormInTheMuseum.jar"><p>Скачать .jar (необходимо наличие Java)</p></a>
 		</div>
 	</div>
 	
@@ -88,8 +122,8 @@
 		<a class="anchor" name="download"></a>	
 		<div class="content-right">
 			<p>Что прячется во тьме музеев, когда последний посетитель переступает порог, когда охранник мирно сопит на своей вахте? Это и предстоит узнать любознательному, но пугливому Котенку, когда он остался один в Эрмитаже, а неестественная гроза оживила его экспонаты.</p>
-			<a href="dist/StormInTheMuseum-setup.exe"><img src="img/button.png">
-			<p>Alpha v0.7</p></a>
+			<a href="dist/StormInTheMuseum-setup.exe"><img src="img/button.png" style="max-width:50%"></a>
+			<a href="dist/StormInTheMuseum.jar"><p>Скачать .jar (необходимо наличие Java)</p></a>
 		</div>
 	</div>
 	
