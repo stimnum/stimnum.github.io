@@ -53,13 +53,15 @@
 			if (x == fx) {clearInterval(interval);}
 		}
 		
-		window.onload = function() {
-			var obj = document.getElementByIddocument.getElementById("link");
+		function underline() {
+			var obj = document.getElementById("link");
 			var x = obj.parentElement.offsetLeft;
 			var y = obj.offsetTop + obj.offsetHeight;
-			var width = obj.parentElement.offsetWidth;
-			document.getElementByIddocument.getElementById("underline").style="left:" + x + "px;top:" + y + "px;width:" + width + "px;";
+			var width = obj.parentElement.offsetWidth;			
+			document.getElementById("underline").style="left:" + x + "px;top:" + y + "px;width:" + width + "px;";
 		};
+		
+		 document.addEventListener("DOMContentLoaded", underline);
 	</script>
 </head>
 
